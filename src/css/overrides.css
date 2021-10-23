@@ -1,0 +1,173 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: "Georgia";
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(122,9,9,1) 100%);
+    text-align: left;
+    color: #000000;
+}
+
+.mainContent {
+    padding: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.front {
+    position: relative;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.red {
+    color: #8B0000FF;
+}
+
+.heading {
+    font-family: "Trebuchet MS", sans-serif;
+}
+h5 {
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+.tree {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    text-align: justify;
+}
+
+.tree .tree_text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 1%;
+    background: #FFFFFF00;
+    font-family: Georgia, sans-serif;
+    font-size: 2em;
+    color: #fff;
+    width: 60%;
+}
+
+.flex-container {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+    overflow: hidden;
+}
+.flex-container .tree {
+    padding: .5%;
+    background: #ffffff;
+    -webkit-flex: 1; /* Safari */
+    -ms-flex: 1; /* IE 10 */
+    flex: 1; /* Standard syntax */
+}
+.flex-container .first_p {
+    background: #ffffff;
+}
+
+.spartans {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.spartans_img {
+    display: flex;
+    position: relative;
+    margin: 1px;
+    width: 60%;
+    float: right;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.cliff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cliff img {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+.xerxes {
+    display: flex;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.xerxes img {
+    display: flex;
+    width: 60%;
+    float: left;
+    padding-right: 10px;
+    flex-shrink: 0;
+}
+
+.quote {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.rating img {
+    width: 10px;
+}
+
+.footnote {
+    padding: 5%;
+    font-size: 10pt;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
